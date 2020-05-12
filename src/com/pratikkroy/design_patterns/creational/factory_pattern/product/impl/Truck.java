@@ -7,4 +7,10 @@ public class Truck implements Transport {
     public void deliver() {
         System.out.println("Deliver by Road");
     }
+
+    @Override
+    public String toString() {
+        super.toString();
+        return "Truck{}";
+    }
 }
