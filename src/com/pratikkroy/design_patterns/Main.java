@@ -8,3 +8,6 @@ public class Main {
         StructuralPatternDemo.demo();
     }
 }
+
+// testing
+// testing
