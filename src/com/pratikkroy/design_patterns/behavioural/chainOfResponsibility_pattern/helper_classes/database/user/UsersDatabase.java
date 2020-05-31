@@ -1,4 +1,4 @@
-package com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.user;
+package com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.database.user;
 
 import java.util.*;
 

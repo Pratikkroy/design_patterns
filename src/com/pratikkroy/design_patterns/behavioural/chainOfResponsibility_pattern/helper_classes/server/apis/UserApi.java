@@ -1,8 +1,8 @@
 package com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.server.apis;
 
-import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.user.LoggedInUserDatabase;
-import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.user.User;
-import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.user.UsersDatabase;
+import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.database.user.LoggedInUserDatabase;
+import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.database.user.User;
+import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.database.user.UsersDatabase;
 
 import java.util.List;
 

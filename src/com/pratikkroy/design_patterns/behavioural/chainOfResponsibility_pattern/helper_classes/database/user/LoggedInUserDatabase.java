@@ -1,7 +1,6 @@
-package com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.user;
+package com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.database.user;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class LoggedInUserDatabase {

@@ -3,7 +3,7 @@ package com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern
 import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.Request;
 import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.Response;
 import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.server.Server;
-import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.user.User;
+import com.pratikkroy.design_patterns.behavioural.chainOfResponsibility_pattern.helper_classes.database.user.User;
 
 public class UserApiDemo {
 
