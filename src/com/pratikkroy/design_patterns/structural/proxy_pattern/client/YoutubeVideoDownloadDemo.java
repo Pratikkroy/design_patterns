@@ -28,7 +28,7 @@ public class YoutubeVideoDownloadDemo {
         downloader.renderVideoPage("catzzzzzzzzz");
         downloader.renderPopularVideos();
         downloader.renderVideoPage("dancesvideoo");
-        // Users might visit the same page quite often.
+        // UsersDatabase might visit the same page quite often.
         downloader.renderVideoPage("catzzzzzzzzz");
         downloader.renderVideoPage("someothervid");
 

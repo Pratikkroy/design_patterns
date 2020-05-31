@@ -3,7 +3,6 @@ package com.pratikkroy.design_patterns.structural.composite_pattern.example.prod
 import com.pratikkroy.design_patterns.structural.composite_pattern.example.product.component.Item;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Box implements Item {
