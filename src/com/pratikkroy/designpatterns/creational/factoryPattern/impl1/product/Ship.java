@@ -1,4 +1,4 @@
-package com.pratikkroy.designpatterns.creational.factoryPattern.product;
+package com.pratikkroy.designpatterns.creational.factoryPattern.impl1.product;
 
 public class Ship implements Vehicle {
     @Override
