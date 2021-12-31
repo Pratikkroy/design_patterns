@@ -7,26 +7,29 @@ import com.pratikkroy.designpatterns.creational.factoryPattern.impl1.factory.Tru
 import com.pratikkroy.designpatterns.creational.factoryPattern.impl1.factory.VehicleFactory;
 import com.pratikkroy.designpatterns.creational.factoryPattern.impl1.product.Vehicle;
 
-public class VehicleDirector {
+public class VehicleFactoryDirector {
 
-    public Vehicle createVehicle(Item item) {
-        VehicleFactory vehicleFactory = getVehicleFactory(item);
+    private final VehicleFactory vehicleFactory;
+    public VehicleFactoryDirector (final String deliveredBy) {
+        switch(deliveredBy){
+        case "SEA":
+            this.vehicleFactory = new ShipFactory();
+            break;
+        case "ROAD":
+            this.vehicleFactory = new TruckFactory();
+            break;
+
+        case "RAIL":
+            this.vehicleFactory = new TrainFactory();
+            break;
+
+        default:
+            this.vehicleFactory = new TruckFactory();
+        }
+    }
+
+    public Vehicle createVehicle() {
         return vehicleFactory.createVehicle();
     }
 
-    private VehicleFactory getVehicleFactory(Item item) {
-        switch(item.getDeliveredBy()){
-            case "SEA":
-                return new ShipFactory();
-
-            case "ROAD":
-                return new TruckFactory();
-
-            case "RAIL":
-                return new TrainFactory();
-
-            default:
-                return new TruckFactory();
-        }
-    }
 }
