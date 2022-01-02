@@ -4,6 +4,7 @@ import com.pratikkroy.designpatterns.creational.abstractFactoryPattern.AbstractF
 import com.pratikkroy.designpatterns.creational.builderPattern.simpleImpl.product.BuilderPatternDemo;
 import com.pratikkroy.designpatterns.creational.factoryPattern.FactoryPatternDemo;
 import com.pratikkroy.designpatterns.creational.prototypePattern.PrototypePatternDemo;
+import com.pratikkroy.designpatterns.creational.singletonPattern.SingletonPatternDemo;
 
 public class CreationalPatternDemo {
 
@@ -12,6 +13,7 @@ public class CreationalPatternDemo {
         startAbstractFactoryPatternDemo();
         startBuilderPatternDemo();
         startPrototypePatternDemo();
+        startSingletonPatternDemo();
     }
 
     private static void startFactoryPatternDemo() {
@@ -43,6 +45,14 @@ public class CreationalPatternDemo {
         System.out.println("Start Prototype pattern demo");
         PrototypePatternDemo.start();
         System.out.println("End Prototype pattern demo");
+        System.out.println("#######################");
+    }
+
+    private static void startSingletonPatternDemo() {
+        System.out.println("#######################");
+        System.out.println("Start Singleton pattern demo");
+        SingletonPatternDemo.start();
+        System.out.println("End Singleton pattern demo");
         System.out.println("#######################");
     }
 }
