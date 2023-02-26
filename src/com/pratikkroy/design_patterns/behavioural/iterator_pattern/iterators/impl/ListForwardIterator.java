@@ -5,10 +5,10 @@ import com.pratikkroy.design_patterns.behavioural.iterator_pattern.iterators.Ite
 
 public class ListForwardIterator<T> implements Iterator<T> {
 
-    final List list;
+    final List<T> list;
     int ptr;
 
-    public ListForwardIterator(final List list) {
+    public ListForwardIterator(final List<T> list) {
         this.list = list;
         this.ptr = -1;
     }

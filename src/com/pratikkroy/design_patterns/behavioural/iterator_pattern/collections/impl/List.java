@@ -8,8 +8,8 @@ import com.pratikkroy.design_patterns.behavioural.iterator_pattern.iterators.imp
 public class List<T> implements Collection<T>, Iterable {
 
     // can't initialise T type arr, thus using Object
-    private Object[] arr;
-    private int size;
+    private final Object[] arr;
+    private       int      size;
     private static final int MAX_SIZE = 1000;
 
     public List() {
@@ -36,20 +36,32 @@ public class List<T> implements Collection<T>, Iterable {
     @Override
     public T remove(final T obj) {
         T object = null;
-        Iterator listForwardIterator = getIterator();
+        Iterator<T> listForwardIterator = getIterator();
+        int index = 0;
         while(listForwardIterator.hasNext()){
-            object = (T)listForwardIterator.getNext();
+            object = listForwardIterator.getNext();
             if(object.equals(obj)){
+                shiftLeft(index);
                 break;
             }
             object = null;
+            index++;
         }
+        arr[size-1] = null;
+        size--;
         return object;
+    }
+
+    private void shiftLeft(int index) {
+        while(index < size-1) {
+            arr[index] = arr[index+1];
+            index++;
+        }
     }
 
     @Override
     public boolean contains(final T obj) {
-        Iterator listForwardIterator = getIterator();
+        Iterator<T> listForwardIterator = getIterator();
         while(listForwardIterator.hasNext()){
             if(listForwardIterator.getNext().equals(obj)){
                 return true;
@@ -66,7 +78,7 @@ public class List<T> implements Collection<T>, Iterable {
     @Override
     public String toString() {
         String str = "List = [ ";
-        Iterator listForwardIterator = getIterator();
+        Iterator<T> listForwardIterator = getIterator();
         while(listForwardIterator.hasNext()){
             str = str + listForwardIterator.getNext().toString()+ " ";
         }
@@ -75,7 +87,7 @@ public class List<T> implements Collection<T>, Iterable {
     }
 
     @Override
-    public Iterator getIterator() {
-        return new ListForwardIterator(this);
+    public Iterator<T> getIterator() {
+        return new ListForwardIterator<T>(this);
     }
 }
