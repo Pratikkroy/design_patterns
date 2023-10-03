@@ -1,10 +1,10 @@
-package com.pratikkroy.designpatterns.creational;
+package com.pratikkroy.designpatterns_archive.creational;
 
 import com.pratikkroy.designpatterns.creational.abstractFactoryPattern.AbstractFactoryPatternDemo;
 import com.pratikkroy.designpatterns.creational.builderPattern.simpleImpl.product.BuilderPatternDemo;
 import com.pratikkroy.designpatterns.creational.factoryPattern.FactoryPatternDemo;
-import com.pratikkroy.designpatterns.creational.prototypePattern.PrototypePatternDemo;
 import com.pratikkroy.designpatterns.creational.singletonPattern.SingletonPatternDemo;
+import com.pratikkroy.designpatterns_archive.creational.prototypePattern.PrototypePatternDemo;
 
 public class CreationalPatternDemo {
 

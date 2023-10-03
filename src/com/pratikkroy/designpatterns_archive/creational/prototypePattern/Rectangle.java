@@ -1,4 +1,4 @@
-package com.pratikkroy.designpatterns.creational.prototypePattern;
+package com.pratikkroy.designpatterns_archive.creational.prototypePattern;
 
 public class Rectangle implements Cloneable<Rectangle> {
     private int height, width;

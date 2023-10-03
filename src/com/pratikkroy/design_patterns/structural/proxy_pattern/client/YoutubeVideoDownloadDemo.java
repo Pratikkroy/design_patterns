@@ -5,7 +5,7 @@ import com.pratikkroy.design_patterns.structural.proxy_pattern.service.third_par
 
 /**
  * This demonstrates two codes, one with cache and another without cache.
- * Generally client should not use code without cache and always should use proxy.
+ * Generally ExporterClient should not use code without cache and always should use proxy.
  * Or in a better scenario The service itself should add proxy at its side.
  */
 public class YoutubeVideoDownloadDemo {

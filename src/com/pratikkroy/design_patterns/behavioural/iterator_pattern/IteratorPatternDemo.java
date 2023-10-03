@@ -4,6 +4,8 @@ import com.pratikkroy.design_patterns.behavioural.iterator_pattern.client.Collec
 
 public class IteratorPatternDemo {
     public static void demo() {
+        System.out.println();
+        System.out.println("Iterator pattern demo.....");
         CollectionsDemo.demo();
     }
 }

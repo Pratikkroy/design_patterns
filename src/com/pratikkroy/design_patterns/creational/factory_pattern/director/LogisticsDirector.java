@@ -9,7 +9,7 @@ import com.pratikkroy.design_patterns.creational.factory_pattern.product.Transpo
 /**
  * Ideally this class should be singleton.
  * This class could only return Transport for a given component
- * and then client can call deliver on that.
+ * and then ExporterClient can call deliver on that.
  */
 public class LogisticsDirector {
 

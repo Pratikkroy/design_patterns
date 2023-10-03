@@ -9,7 +9,7 @@ import com.pratikkroy.design_patterns.structural.immutable.ImmutableDemo;
 import com.pratikkroy.design_patterns.structural.proxy_pattern.ProxyPatternDemo;
 
 public class StructuralPatternDemo {
-    public static void demo(){
+    public static void start(){
         System.out.println();
         System.out.println("Structural pattern demo.....");
 

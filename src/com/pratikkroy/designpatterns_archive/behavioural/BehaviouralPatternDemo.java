@@ -1,4 +1,4 @@
-package com.pratikkroy.designpatterns.behavioural;
+package com.pratikkroy.designpatterns_archive.behavioural;
 
 import com.pratikkroy.designpatterns.behavioural.chainOfResponsibilityPattern.ChainOfResponsibilityPatternDemo;
 import com.pratikkroy.designpatterns.structural.adapterPattern.AdapterPatternDemo;

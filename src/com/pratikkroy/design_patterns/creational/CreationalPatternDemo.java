@@ -9,14 +9,14 @@ import com.pratikkroy.design_patterns.creational.singleton.SingletonDemo;
 
 /**
  * In creational design pattern, we have component and
- * a client to existing_use that component.
+ * a ExporterClient to existing_use that component.
  * The responsibilty to create instance of the component is given
  * to some other actor like creator/director to hide complexity
  * in creating different types of objects.
  *
  *
  *
- * client --> [calls] --> creator --> [to return] --> component
+ * ExporterClient --> [calls] --> creator --> [to return] --> component
  */
 public class CreationalPatternDemo {
     public static void demo(){

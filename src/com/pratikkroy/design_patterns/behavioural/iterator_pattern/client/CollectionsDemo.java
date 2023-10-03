@@ -7,7 +7,6 @@ import com.pratikkroy.design_patterns.behavioural.iterator_pattern.iterators.Ite
 
 public class CollectionsDemo {
     public static void demo() {
-        System.out.println("Iterator pattern demo.....");
         treeDemo();
     }
 

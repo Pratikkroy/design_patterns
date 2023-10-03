@@ -8,15 +8,15 @@ import com.pratikkroy.design_patterns.structural.adapter_pattern.service.SquareP
 import com.pratikkroy.design_patterns.structural.adapter_pattern.service.SquareShape;
 
 /**
- * This pattern is used when the client wants to use some
- * third party service but unable to do so because the client
+ * This pattern is used when the ExporterClient wants to use some
+ * third party service but unable to do so because the ExporterClient
  * is using some different interface than the service.
  * So we introduce adapter which will convert all the
  * third party service calls to matching interface.
  *
- * client is using RoundShape interface. Now client wants to use third party interface SquareShape.
- * client is checking if given RoundShape will be fit in RoundHole or not.
- * Now client wants to check if given SquareShape will fit into the RoundHole or not.
+ * ExporterClient is using RoundShape interface. Now ExporterClient wants to use third party interface SquareShape.
+ * ExporterClient is checking if given RoundShape will be fit in RoundHole or not.
+ * Now ExporterClient wants to check if given SquareShape will fit into the RoundHole or not.
  * So adapter code is written to convert the square sides to corresponding radius to be fitted.
  *
  * RoundHole.fitsIn only accepts RoundShape so adapter code is written such that it converts the

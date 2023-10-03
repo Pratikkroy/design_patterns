@@ -3,7 +3,7 @@ package com.pratikkroy.design_patterns.structural.adapter_pattern.client.existin
 import com.pratikkroy.design_patterns.structural.adapter_pattern.client.product.RoundShape;
 
 /**
- * This is just a util object, used by client to do some work.
+ * This is just a util object, used by ExporterClient to do some work.
  */
 public class RoundHole {
 

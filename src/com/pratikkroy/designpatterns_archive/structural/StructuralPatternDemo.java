@@ -1,4 +1,4 @@
-package com.pratikkroy.designpatterns.structural;
+package com.pratikkroy.designpatterns_archive.structural;
 
 import com.pratikkroy.designpatterns.structural.adapterPattern.AdapterPatternDemo;
 import com.pratikkroy.designpatterns.structural.bridgePattern.BridgePatternDemo;

@@ -12,7 +12,7 @@ import com.pratikkroy.design_patterns.structural.decorater_pattern.decorater.imp
  * We can always enhance the work by extending the ComponentImpl class.
  * But inheritance has its own limitations.
  *
- * The client is responsible for decorating the object.
+ * The ExporterClient is responsible for decorating the object.
  */
 public class DataReadWriteDemo {
     private static final String data = "This is dummy data";
