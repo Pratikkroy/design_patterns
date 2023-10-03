@@ -1,4 +1,4 @@
-package com.pratikkroy.designpatterns.creational.builderPattern.simpleImpl.product;
+package com.pratikkroy.designpatterns_archive.creational.builderPattern.simpleImpl.product;
 
 public class BuilderPatternDemo {
 
@@ -9,7 +9,8 @@ public class BuilderPatternDemo {
 
         System.out.println("Building book with "
                 + "name=["+bookName+"] authorName=["+authorName+"] publicationName=["+publicationName+"]");
-        Book book = Book.builder(bookName, authorName, publicationName)
+        com.pratikkroy.designpatterns.creational.builderPattern.simpleImpl.product.Book book =
+                com.pratikkroy.designpatterns.creational.builderPattern.simpleImpl.product.Book.builder(bookName, authorName, publicationName)
                 .pagesCount(10)
                 .price(100)
                 .build();
